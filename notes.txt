@@ -1,0 +1,11 @@
+//1.Ways to print in javascript::
+    console.log("Hello world");
+    alert("me")
+    document.write("This is document write")
+
+//2.Javascript control API (It's in the browser)
+    console.log("Hello world");
+    console.log("Hello world", 4+4, "this is another log");
+    console.warning("This is warning");
+    console.error("This is error");
+
