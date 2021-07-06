@@ -60,3 +60,133 @@ console.log("The value of a/b is ",a/b)
 var c=b;
 c+=2;
 console.log("The value of a+c is ",a+c)
+
+console.log(!false);
+*/
+
+//making function:
+function avg(num1,num2){
+    average=(num1+num2)/2;
+    return average;
+}
+c1=avg(6,6);
+c2=avg(10,12);
+//console.log(c1,c2);
+
+/*//conditionals in JavaScript:
+var age=12;
+if(age>18){
+    console.log("u can apply for a Driving License");
+}
+else{
+    console.log("u can't apply for driving license");
+} */
+
+var score=66;
+if(score>80){
+    console.log("A+");
+}
+else if(score>75){
+    console.log("A");
+}
+else if(score>70){
+    console.log("A-");
+}
+else if(score>65){
+    console.log("B+");
+}
+else if(score>60){
+    console.log("B");
+}
+else{
+    console.log("Fail");
+}
+console.log("end here")
+
+
+>>----Array-----<<
+
+
+var arr=[1,2,3,4,5,"Hassan","Tuhin","BYT"];
+console.log(arr);
+console.log(arr.length);
+/*console.log(arr.length);
+arr.push("G.H.T");
+console.log(arr);
+console.log(arr.length);*/
+
+/*console.log(arr);
+console.log(arr.length);
+arr.pop();
+console.log(arr);
+console.log(arr.length);*/
+
+//another way of defining array:
+const cars=new Array(1,2,3,"Hasan","Tohin");
+console.log(cars);
+
+const names={firstName:"Hassan",lastName:"Tuhin",age:22};
+console.log(names.firstName);
+console.log("age is:",names.age);
+
+/* sorting array:
+
+var arr=[4,6,3,8,7,13,10];
+console.log("Before sorting:",arr);
+arr.sort(sorting);
+console.log("ascending order:",arr);
+arr.sort(desorting);
+console.log("descending order:",arr);
+
+function sorting(a,b){
+        return a-b;
+}
+function desorting(a,b){
+    return b-a;
+}
+*/
+
+>----For loop----<
+
+var num=new Array();
+for(var i=0;i<5;i++){
+    num[i]=parseInt(prompt("enter a number : "));
+}
+sum=0;
+for(var j=0;j<5;j++){
+    console.log(num[j]);
+    sum=sum+num[j];
+
+}
+console.log("sum is: ",sum);
+................................
+// it 1st take how many numbers u want to input. then start the array and work as before:
+
+var num=new Array();
+var n=parseInt(prompt("how many num : "))
+for(var i=0;i<n;i++){
+    num[i]=parseInt(prompt("enter a number : "));
+}
+sum=0;
+for(var j=0;j<n;j++){
+    console.log(num[j]);
+    sum=sum+num[j];
+
+}
+console.log("sum is: ",sum);
+
+//while loop:
+i=0;
+while(i<arr.length){
+    console.log(arr[i]);
+    i++;
+}
+
+//do..while loop:
+var arr = [1, 2, 3, 4, 5, "Hassan", "Tuhin", "BYT"];
+
+let j = 0;
+do {
+    console.log(arr[j]);
+    j++;
+} while (j < arr.length);
