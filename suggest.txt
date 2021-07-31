@@ -1,0 +1,3 @@
+In array.js file there are describen the following topics:
+
+concatinate, copywithin, 

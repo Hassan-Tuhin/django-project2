@@ -33,11 +33,21 @@
 // const arr1=[1,2,3,4,5,6,7,8,9,10];
 // console.log(`Before using copyWithin main array:${arr1}`);
 // var res=arr1.copyWithin(3,0,3);
+        
+         /* 3= target. kon jaiga theke copy start hbe.
+            0=kon element gula copy hbe ogular starting point
+            3=kon element gula copy hbe ogular end point
+        */
 
-// console.log(`After using copyWithin main array: ${arr1}`);
+// //console.log(`After using copyWithin main array: ${arr1}`);
 // console.log(`put the changed in res variable: ${res}`);
 
 
+// const arr1=[1,2,3,4,5,6,7,8,9,10];
+// console.log(`Before using copyWithin main array:${arr1}`);
+// var res=arr1.copyWithin(4,1,3);
+
+// console.log(`put the changed in res variable: ${res}`);
 
 
 //  >>>>>>>>>>>>>>  Use of ARRAY.ENTRIES  <<<<<<<<<<<<<<<<<<<<
