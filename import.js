@@ -1,7 +1,39 @@
-import {pi} from './export.js';
-console.log(pi);
 
 
+// when we need to import just one component
+
+// const a=require("./export");
+// console.log(a);
+
+
+
+//when we need to import multiple component
+/*
+
+const myObj = require ("./export");
+console.log("This is the full object: ",myObj);
+console.log(myObj.pi);
+console.log(myObj.number);
+console.log(`This is a string from export file: ${myObj.name}`);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const a = require ("./export");
+// console.log(a);
 
 
 
