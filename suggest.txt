@@ -1,3 +1,9 @@
-In array.js file there are describen the following topics:
+In array.js file there we practise on following topics:
 
-concatinate, copywithin, 
+concatinate, copywithin, array.entries, array.every , array.fill,
+array.filter, array.find, array.findindex, array.indexof, array.foreach(), 
+array.from, array.include, isArray, array.mapping, array.reduce, array.reduceRight,
+Push/Unshifit,,, pop/shift, array.slice, array.splice, array.some
+
+
+
