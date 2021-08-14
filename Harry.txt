@@ -1,0 +1,436 @@
+//1.Ways to print in javascript::
+    console.log("Hello world");
+    alert("me")
+    document.write("This is document write")
+
+//2.Javascript control API (It's in the browser)
+    console.log("Hello world");
+    console.log("Hello world", 4+4, "this is another log");
+    console.warning("This is warning");
+    console.error("This is error");
+
+//document.getElementById("para").innerHTML="This is done by JS";
+
+var number1=10;
+var number2=20;
+console.log(number1 * number2); //This output will be shown in concole panel
+
+//numbers:
+var num1=27;
+var num2=41;
+
+//strings:
+var str1="This is first string";
+var str2="This is second string";
+
+//objects:
+var marks={
+    Hassan:1,
+    Tohin:2,
+    Saifu:3
+}
+
+console.log(marks);
+
+>---
+//boolean:
+var1=true;
+var2=false;
+console.log(var1, var2);
+>----
+var und;
+console.log(und);//means no value defined here
+
+var n=null;
+console.log(n);
+
+>---
+var arr=[1,2,3,'Hassan',5];
+console.log(arr);
+//console.log(arr[1]);
+
+//arithmetic operators:
+var a=5;
+var b=6;
+console.log("The value of a+b is ",a+b)
+console.log("The value of a-b is ",a-b)
+console.log("The value of a*b is ",a*b)
+console.log("The value of a/b is ",a/b)
+
+//assignment operators:
+var c=b;
+c+=2;
+console.log("The value of a+c is ",a+c)
+
+console.log(!false);
+*/
+
+//making function:
+function avg(num1,num2){
+    average=(num1+num2)/2;
+    return average;
+}
+c1=avg(6,6);
+c2=avg(10,12);
+//console.log(c1,c2);
+
+/*//conditionals in JavaScript:
+var age=12;
+if(age>18){
+    console.log("u can apply for a Driving License");
+}
+else{
+    console.log("u can't apply for driving license");
+} */
+
+var score=66;
+if(score>80){
+    console.log("A+");
+}
+else if(score>75){
+    console.log("A");
+}
+else if(score>70){
+    console.log("A-");
+}
+else if(score>65){
+    console.log("B+");
+}
+else if(score>60){
+    console.log("B");
+}
+else{
+    console.log("Fail");
+}
+console.log("end here")
+
+
+>>----Array-----<<
+//array attributes
+
+var arr=[1,2,3,4,5,"Hassan","Tuhin","BYT"];
+console.log(arr);
+console.log(arr.length);
+> arr.push("G.H.T");
+console.log(arr);
+> arr.pop();
+> arr.shift();
+console.log(arr);
+> arr.toString();
+
+>> var arr=["Hassan","Tuhin",1,2,"BYT",3];
+console.log(arr);
+console.log(arr.copyWithin(0,4)); //copies the element of index 4 & put it in index 0
+>>
+
+//another way of defining array:
+const cars=new Array(1,2,3,"Hasan","Tohin");
+console.log(cars);
+
+const names={firstName:"Hassan",lastName:"Tuhin",age:22};
+console.log(names.firstName);
+console.log("age is:",names.age);
+
+//another way of printing array:
+var arr=[1,2,3,4,5,6];
+
+arr.forEach(function(element){
+    console.log(element);
+})
+
+/* sorting array:
+
+var arr=[4,6,3,8,7,13,10];
+console.log("Before sorting:",arr);
+arr.sort(sorting);
+console.log("ascending order:",arr);
+arr.sort(desorting);
+console.log("descending order:",arr);
+
+function sorting(a,b){
+        return a-b;
+}
+function desorting(a,b){
+    return b-a;
+}
+*/
+
+>----For loop----<
+
+var num=new Array();
+for(var i=0;i<5;i++){
+    num[i]=parseInt(prompt("enter a number : "));
+}
+sum=0;
+for(var j=0;j<5;j++){
+    console.log(num[j]);
+    sum=sum+num[j];
+
+}
+console.log("sum is: ",sum);
+................................
+// it 1st take how many numbers u want to input. then start the array and work as before:
+
+var num=new Array();
+var n=parseInt(prompt("how many num : "))
+for(var i=0;i<n;i++){
+    num[i]=parseInt(prompt("enter a number : "));
+}
+sum=0;
+for(var j=0;j<n;j++){
+    console.log(num[j]);
+    sum=sum+num[j];
+
+}
+console.log("sum is: ",sum);
+
+//while loop:
+i=0;
+while(i<arr.length){
+    console.log(arr[i]);
+    i++;
+}
+
+//do..while loop:
+var arr = [1, 2, 3, 4, 5, "Hassan", "Tuhin", "BYT"];
+
+let j = 0;
+do {
+    console.log(arr[j]);
+    j++;
+} while (j < arr.length);
+
+>............<
+var arr=[1,2,3,4,5,6];
+
+for(var i=0;i<5;i++){
+    if(i==2){
+        break;
+    }
+    console.log(arr[i]);
+}
+
+for(var i=0;i<5;i++){
+    if(i==2){
+        continue;
+    }
+    console.log(arr[i]);
+}
+
+
+>------------String--------------<
+
+
+/*let mystring="Golam Hassan Tohin ia a very good guy";
+console.log(mystring.length);
+console.log(mystring.indexOf("Hassan"));
+console.log(mystring.lastIndexOf("guy"));
+console.log(mystring.slice(6,12));
+
+d=mystring.replace("Tohin","BYT");
+console.log(d);*/
+
+const a="hassan";
+const b="tohin";
+console.log(a.toUpperCase());
+console.log(isequal(a,b));
+
+function isequal(str1,str2){
+    return str1.toUpperCase()==str2.toUpperCase();
+}
+
+
+>-------------------Date-------------------<
+
+let mydate=new Date();
+console.log(mydate);
+console.log(mydate.getDate());
+console.log(mydate.getFullYear());
+console.log(mydate.getMonth());
+console.log(mydate.getHours());
+console.log(mydate.getTime());
+
+>----------DOM manipulation---------------<
+
+let d=document.getElementById('click');
+console.log(d);
+
+let a=document.getElementsByClassName('container');
+console.log(a);
+
+//
+let a=document.getElementsByClassName('container');
+a[1].style.background="yellow";
+console.log(a); //
+
+// let a=document.getElementsByClassName('container');
+console.log(a);
+
+a[1].classList.add('bg-primary');
+a[0].classList.add('text-success');
+//
+
+// 
+
+let a=document.getElementsByClassName('container');
+console.log(a);
+
+a[1].classList.add('bg-primary');
+a[0].classList.add('text-success');
+
+a[0].classList.remove('text-success');
+a[1].classList.remove('bg-primary');
+
+//
+
+let a=document.getElementsByClassName('container');
+console.log(a);
+
+console.log(a[0].innerHTML);
+console.log(a[0].innerText);
+
+//
+>----------getelementbyTagname---------------<
+
+
+
+tg=document.getElementsByTagName("div");
+console.log(tg);
+
+bt=document.getElementsByTagName('button');
+console.log(bt);
+
+
+//creating child
+tg=document.getElementsByTagName("div");
+console.log(tg);
+
+createdelement=document.createElement('p');
+createdelement.innerText="This is another paragraph";
+/*createdelement.style.background='black';
+createdelement.style.color='white';*/
+
+tg[0].appendChild(createdelement);
+
+
+//
+
+//replacing child
+tg=document.getElementsByTagName("div");
+console.log(tg);
+
+createdelement=document.createElement('p');
+createdelement.innerText="This is another paragraph";
+
+tg[0].appendChild(createdelement);
+
+createdelement2=document.createElement('b');
+createdelement2.innerText="This is created bold";
+
+tg[0].replaceChild(createdelement2, createdelement);
+
+//
+//selecting using query
+a=document.querySelector('.container');
+console.log(a);
+b=document.querySelectorAll('.container');
+console.log(b);
+//
+
+>-------------events on container-----------------<
+
+//
+function clicked(){
+    console.log("The button is clicked");
+}
+
+window.onload = function(){
+    console.log('window reloaded')  //this message will seen when the window being reloaded
+}                                   
+
+//
+function clicked(){
+    console.log("The button is clicked");
+}
+
+// firstcontainer.addEventListener('click',function(){
+//     console.log("click hoise!!");
+// })
+
+firstcontainer.addEventListener("mouseover",function(){
+    firstcontainer.style.color='red';
+    console.log("mouse on container");
+})
+
+firstcontainer.addEventListener('mouseout',function(){
+    firstcontainer.style.color='yellow';
+    console.log("mouse out of container");
+})
+//
+
+
+firstcontainer.addEventListener("mouseup",function(){
+    console.log("mouse up container");
+})
+firstcontainer.addEventListener("mousedown",function(){
+    console.log("mouse down container");
+})
+//
+
+>--run it full with/without comment-----<
+
+let prevHtml=document.querySelectorAll('.container')[1].innerHTML;
+// console.log(prevHtml);
+
+firstcontainer.addEventListener('mouseover',function(){
+    document.querySelectorAll('.container')[1].innerHTML=prevHtml;
+    //document.querySelectorAll('.container')[1].style.color='yellow';
+    console.log("mouse on cccccccc");
+    
+})
+
+firstcontainer.addEventListener('mouseout',function(){
+    document.querySelectorAll('.container')[1].innerHTML="<b> it's clicked </b>";
+    //document.querySelectorAll('.container')[1].style.color="red";
+    console.log('bbbbbbbbb');
+})
+
+
+>>>>>>  another way of defining function  <<<<<<<<<<<
+
+    
+summ=(a,b)=>{
+    return a+b;
+}
+a=summ(2,40);
+console.log(a);
+
+
+//
+logkoro=()=>{
+    console.log('it is loggged');
+}
+
+setTimeout(logkoro,5000);
+
+
+logkoro=()=>{
+    //document.querySelectorAll('.container')[1].innerHtml="<b>set interval fired</b>";
+    //document.getElementById('para').innerHTML="<b> hlwwwww </b>"
+    console.log("it is logged");
+}
+
+setTimeout(logkoro,2000); //it will print the function aftr two scnd of reloading window.
+
+//
+
+
+
+logkoro=()=>{
+    console.log("it is logged");
+}
+
+clr=setInterval(logkoro,2000);  //setInterval is used when we want to do any task after a time continuously. in this function it will print it after every two second
+                            //when we need to stop this write in console clearInterval(clr)
+
+    
